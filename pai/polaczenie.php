@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <title> mysql_connect </title>
