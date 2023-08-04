@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+   Podaj liczbę gości:  <input type="number" id="ile"><br>
+   Zestaw 1: 100zł <input type="radio" name="zestaw" id="z1"><br>
+   Zestaw 2: 120zł <input type="radio" name="zestaw" id="z2"><br>
+    <button id="oblicz">oblicz</button>
+    <p id="koszt"></p>
+
+</body>
+<script>
+
+     
+    function oblicz(){ 
+        var z1=document.getElementById("z1").checked;
+        var z2=document.getElementById("z2").checked;
+        var ile=document.getElementById("ile").value;
+    if(z1==true){
+            var koszt=ile*100;
+            document.getElementById("koszt").innerHTML="Koszt : "+koszt+" zł";
+        }
+    else if(z2==true){
+            var koszt=ile*120;
+            document.getElementById("koszt").innerHTML="Koszt : "+koszt+" zł";
+    }
+        else{
+            document.getElementById("koszt").innerHTML="nie wybrano zestawu";
+        }
+    }
+    document.getElementById("oblicz").onclick=oblicz;
+    </script>
+</html>
