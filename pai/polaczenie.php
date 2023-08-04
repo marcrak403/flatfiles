@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> mysql connect </title>
+<title> mysql_connect </title>
 </head>
 <body>
 <?php
